@@ -1,0 +1,6 @@
+mute audio
+blur background
+only contact form in footer.  no phone.
+swap out icons for soundcloud of latest album
+loop video, stay on current video
+contact me - fade between red and white/black/orange/yellow
