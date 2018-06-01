@@ -1,8 +1,11 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,300i,400i,700i");
 @font-face {
     font-family: 'anurati'; /*a name to be used later*/
     src: url('../fonts/Anurati-Regular.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'bebas neue'; /*a name to be used later*/
+    src: url('../fonts/BebasNeue.otf'); /*URL to font*/
 }
 
 /*
@@ -44,6 +47,7 @@
 
 	body {
 		line-height: 1;
+		font-family: 'bebas neue', sans-serif !important;
 	}
 
 	ol, ul {
@@ -67,6 +71,11 @@
 	body {
 		-webkit-text-size-adjust: none;
 		background-color: black;
+	}
+
+	p {
+		font-size: 1.5rem;
+		font-weight: 400;
 	}
 
 /* Box Model */
@@ -1744,7 +1753,7 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Lato", Arial, Helvetica, sans-serif;
+		font-family: "bebas neue", sans-serif;
 		font-weight: 200;
 		font-size: 1rem;
 		line-height: 1.65;
