@@ -1,5 +1,9 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,300i,400i,700i");
+@font-face {
+    font-family: 'anurati'; /*a name to be used later*/
+    src: url('../fonts/Anurati-Regular.otf'); /*URL to font*/
+}
 
 /*
 	GroundBreaking by Superior Marketing and Design
@@ -62,6 +66,7 @@
 
 	body {
 		-webkit-text-size-adjust: none;
+		background-color: black;
 	}
 
 /* Box Model */
@@ -984,6 +989,20 @@
 	}
 
 	@media screen and (max-width: 736px) {
+
+		#banner iframe {
+			-moz-transform: scale(1,3);
+			-webkit-transform: scale(1,3);
+			-ms-transform: scale(1,3);
+			transform: scale(1,3);
+		}
+
+		#banner video {
+			-moz-transform: scale(1,3);
+			-webkit-transform: scale(1,3);
+			-ms-transform: scale(1,3);
+			transform: scale(1,3);
+		}
 		
 		.logo2 {
 			width: 9em;
@@ -1788,6 +1807,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: 'bebas neue', sans-serif;
 		font-weight: 400;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -2801,6 +2821,7 @@
 			list-style: none;
 			margin: 0;
 			padding: 0;
+			width: 33%;
 		}
 
 			.spotlight > ul > li {
@@ -2851,6 +2872,12 @@
 					-ms-order: 2;
 					order: 2;
 					width: calc(50% - 1rem);
+				}
+
+				.spotlight > ul > li {
+					border-top: none;
+					margin: 2rem 0 0 0;
+					padding: 2rem 0 0 0;
 				}
 
 					.spotlight > ul:first-child {
@@ -3562,8 +3589,34 @@
 			height: 100vh;
 			overflow: hidden;
 			z-index: -1;
-			-webkit-filter: blur(3px);
-			filter: blur(3px);
+			-ms-transform: scale(1.6, 0.9);
+			-webkit-transform: scale(1.6, 0.9);
+			transform: scale(1.6, 1);
+			/* -webkit-filter: blur(3px);
+			filter: blur(3px); */
+		}
+
+		#banner video {
+			-moz-object-fit: cover;
+			-webkit-object-fit: cover;
+			-ms-object-fit: cover;
+			object-fit: cover;
+			-moz-object-position: center;
+			-webkit-object-position: center;
+			-ms-object-position: center;
+			object-position: center;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+			z-index: -1;
+			-ms-transform: scale(1.6, 0.9);
+			-webkit-transform: scale(1.6, 0.9);
+			transform: scale(1.6, 1);
+			/* -webkit-filter: blur(3px);
+			filter: blur(3px); */
 		}
 
 		#banner header p {
@@ -3795,7 +3848,7 @@
 			}
 
 			#wrapper > .main > header.accent1 {
-				background-color: #a1040496;
+				background-color: #4a4a4a96;
 				color: rgba(255, 255, 255, 0.75);
 			}
 
@@ -3990,11 +4043,11 @@
 				}
 
 				#wrapper > .main > header.accent1 + .tabs > .titles {
-					background-color: #a10404;
+					background-color: #191919;
 				}
 
 					#wrapper > .main > header.accent1 + .tabs > .titles:before {
-						background-color: #a10404;
+						background-color: #191919;
 					}
 
 					#wrapper > .main > header.accent1 + .tabs > .titles > .title {
@@ -5286,4 +5339,37 @@ animation: glow 3s infinite;
 	100% {
 		color: orange
 	}
+  }
+
+  .bandcamp {
+	  position: relative;
+	  width: 2.5em;
+	  height: auto;
+	  top: 13px;
+	  margin-right: 1.5rem;
+  }
+
+  #header > nav > ul > li > a > img.bandcamp:hover {
+	-moz-transition: filter 1s ease-in-out;
+	-webkit-transition: filter 1s ease-in-out;
+	-ms-transition: filter 1s ease-in-out;
+	transition: filter 1s ease-in-out;
+	/* background-color: #a10404; */
+	filter: sepia() saturate(10000%) hue-rotate(30deg);
+  }
+  
+  .bandcamp:hover {
+	color: #a10404 !important;
+  }
+
+  @media screen and (max-width: 980px) {
+
+	.bandcamp {
+		display: none;
+	}
+
+  }
+
+  .anurati {
+	  font-family: 'anurati', sans-serif;
   }
