@@ -2834,7 +2834,7 @@
 		}
 
 			.spotlight > ul > li {
-				border-top: solid 1px #eeeeee;
+				/* border-top: solid 1px #eeeeee; */
 				margin: 2rem 0 0 0;
 				padding: 2rem 0 0 0;
 			}
