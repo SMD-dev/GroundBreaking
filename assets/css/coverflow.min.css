@@ -14,8 +14,8 @@
   clear: both;
 }
 .ui-coverflow {
-  -webkit-perspective: 500px;
-  perspective: 500px;
+  -webkit-perspective: 7500px;
+  perspective: 7500px;
   position: absolute;
   z-index: 2;
 }

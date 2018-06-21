@@ -48,7 +48,12 @@
 	body {
 		line-height: 1;
 		font-family: 'bebas neue', sans-serif !important;
-	}
+		overflow: scroll;
+	}	
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
 
 	ol, ul {
 		list-style: none;
@@ -2812,6 +2817,7 @@
 		-ms-align-items: center;
 		align-items: center;
 		margin: 0 0 2rem 0;
+		background: url('../../images/1b.jpg') 33% left no-repeat, url('../../images/2b.jpg') 33% center no-repeat, url('../../images/3b.jpg') 33% right no-repeat;
 	}
 
 		.spotlight > * {
@@ -5264,6 +5270,11 @@
 				padding: 2.5em 1.75em;
 			}
 
+			
+			body {
+				background-color: black;
+			}
+
 		}
 
 	body.is-navPanel-visible #wrapper {
@@ -5381,4 +5392,9 @@ animation: glow 3s infinite;
 
   .anurati {
 	  font-family: 'anurati', sans-serif;
+  }
+
+  .zero-back {
+	z-index: -1;
+	position: relative;
   }

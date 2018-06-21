@@ -5,3 +5,27 @@
 .ui-state-active {
   border: 0px;
 }
+
+.ui-coverflow img {
+  height: 300px;
+  overflow: hidden;
+}
+
+.coverflow-songs {
+  justify-content: center;
+  position: relative;
+  top: -50px;
+}
+
+.coverflow-songs-list {
+  text-align: left;
+  display: none;
+}
+
+.coverflow-songs-list ul {
+  transform: translate(45%);
+}
+
+.coverflow-songs-list h1 {
+  text-align: center;
+}
