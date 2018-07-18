@@ -4,15 +4,15 @@
 <head>
 	<title>Groundbreaking</title>
 	<!-- one month expiration -->
-	<meta http-equiv="Cache-control" max-age=2628000 content="public">
-	<meta http-equiv="Keep-Alive" timeout=5 max=1000>
+	<meta http-equiv="Cache-control" max-age=2628000 content="public" />
+	<meta http-equiv="Keep-Alive" timeout=5 max=1000 />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/coverflow.min.css" />
 	<link rel="stylesheet" href="assets/css/coverflow.css" />
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" /> -->
 </head>
 
 <body>
@@ -63,46 +63,6 @@
 							<span class="label">Instagram</span>
 						</a>
 					</li>
-					<!-- <li class="current">
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="#" class="icon fa-angle-down">Dropdown</a>
-						<ul>
-							<li>
-								<a href="#">Option One</a>
-							</li>
-							<li>
-								<a href="#">Option Two</a>
-							</li>
-							<li>
-								<a href="#">Option Three</a>
-							</li>
-							<li>
-								<a href="#">Submenu</a>
-								<ul>
-									<li>
-										<a href="#">Option One</a>
-									</li>
-									<li>
-										<a href="#">Option Two</a>
-									</li>
-									<li>
-										<a href="#">Option Three</a>
-									</li>
-									<li>
-										<a href="#">Option Four</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="generic.html">Generic</a>
-					</li>
-					<li>
-						<a href="elements.html">Elements</a>
-					</li> -->
 				</ul>
 			</nav>
 
@@ -115,9 +75,8 @@
 					<img src="./images/gb_20text_20mastered.png" class="big-logo" />
 				</header>
 			</div>
-			<iframe src="https://www.youtube.com/embed/YVDRH2wZ1xM?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=YVDRH2wZ1xM&amp;modestbranding=1&amp;rel=0&amp;controls=0&amp;showinfo=0"
-			 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			<!-- <video width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="./images/Black Noise.mp4" autoplay></video> -->
+
+			<video src="./images/Black NoiseTrim.mp4" muted autoplay loop playsinline></video>
 		</section>
 
 		<!-- Section -->
@@ -230,17 +189,18 @@
 
 		<section id="two" class="main">
 			<header>
-				<h2 class="anurati">ALBUMS</h2>
+				<!-- Intentional space left between I and S for legibility -->
+				<h2 class="anurati">DI SCOGRAPHY</h2>
 			</header>
 			<div>
 				<div id="coverflow">
 					<img src="./images/albums/0.jpg" />
-					<img src="./images/albums/insert-genre-here.jpg" />
-					<img src="./images/albums/anarchy-ii.jpg" />
+					<img src="./images/albums/igh.jpg" />
+					<img src="./images/albums/aii.jpg" />
 					<img src="./images/albums/hurt.jpg" />
 					<img src="./images/albums/anarchy.jpg" />
-					<img src="./images/albums/we-are-monsters.jpg" />
-					<img src="./images/albums/devastator.jpg" />
+					<img src="./images/albums/wam.jpg" />
+					<img src="./images/albums/dev.jpg" />
 				</div>
 			</div>
 			<div class="coverflow-songs">
@@ -257,6 +217,7 @@
 					</ul>
 				</div>
 				<div id="l1" class="coverflow-songs-list">
+					<!-- Leave spaces as is -->
 					<h1 class="anurati">[ I NSERT GENRE HERE ]</h1>
 					<ul>
 						<li>Obsessive</li>
@@ -270,6 +231,7 @@
 					</ul>
 				</div>
 				<div id="l2" class="coverflow-songs-list">
+					<!-- Leave spaces as is -->
 					<h1 class="anurati">ANARCHY I I</h1>
 					<ul>
 						<li>Justice</li>
@@ -512,6 +474,22 @@
 	<script src="assets/js/slide.js"></script>
 	<script src="assets/js/coverflow.min.js"></script>
 	<script src="assets/js/coverflow.js"></script>
+	<script>
+		var edge =
+			window.navigator.userAgent.indexOf("Edge") > -1;
+
+		if (!edge) {
+			$("video").remove();
+			$('#banner').append('<iframe src="https://www.youtube.com/embed/YVDRH2wZ1xM?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=YVDRH2wZ1xM&amp;modestbranding=1&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder = "0" allow = "autoplay; encrypted-media" allowfullscreen ></iframe > ');
+		}
+		// var edge =
+		// 	window.navigator.userAgent.indexOf("Edge") > -1;
+
+		// if (edge) {
+		// 	$("iframe").remove();
+		// 	$('#banner').append('<video src="./images/Black NoiseTrim.mp4" muted autoplay loop playsinline></video>');
+		// }
+	</script>
 
 </body>
 
